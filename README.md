@@ -123,37 +123,17 @@ The original working setup used:
 
 ## Required configuration
 
-Most users should only need to change one or two values near the top of bof3_lighthouse_bot.ahk.
 
-global LeadMs := 140
+Most users should only need to change a few variables near the top of
+`bof3_lighthouse_bot.ahk`.
 
+### DuckStation executable name
+
+The script was originally tested with:
+
+```ahk
 global DuckExe := "duckstation-qt-x64-ReleaseLTCG-SSE2.exe"
-global DuckTitle := "Breath of Fire III"
-DuckExe
 
-Set this to the filename of the DuckStation executable you actually use.
-
-For example:
-
-global DuckExe := "duckstation.exe"
-
-or:
-
-global DuckExe := "duckstation-qt-x64-ReleaseLTCG.exe"
-
-You can find the executable name in Task Manager under the Details tab while DuckStation is running.
-
-The bot also tries several common fallback names automatically, but changing DuckExe is the safest option if your DuckStation build uses a different filename
-
-- Windows
-- DuckStation
-- Breath of Fire III
-- game logic at 30 FPS
-- video output at 60 FPS / 100% speed
-- host key `K`
-- default lead: **140 ms**
-
-Other display sizes should generally work because the graph geometry is derived from the detected graph and DuckStation window size, but unusual filters or scaling may require adjustments.
 
 ## Limitations
 
