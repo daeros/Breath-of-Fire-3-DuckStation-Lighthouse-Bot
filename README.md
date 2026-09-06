@@ -14,6 +14,7 @@ The default release timing is **140 ms early**, which was the successful setting
 - Breath of Fire III
 - DuckStation running the game at normal speed
 - The intended DuckStation controller action bound to host keyboard key **K**
+- You'll probably have to Edit certain variables to make it suitable for  your end.
 
 ## Quick start
 
