@@ -1,0 +1,1 @@
+f3c3919ef3db2e92a06cda8543b42e37825e831e52c4a476682fa49f45895fb7  BOF3-Lighthouse-Bot-v1.0.0.ahk
