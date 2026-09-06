@@ -123,7 +123,6 @@ The original working setup used:
 
 ## Required configuration
 
-
 Most users should only need to change a few variables near the top of
 `bof3_lighthouse_bot.ahk`.
 
@@ -133,7 +132,31 @@ The script was originally tested with:
 
 ```ahk
 global DuckExe := "duckstation-qt-x64-ReleaseLTCG-SSE2.exe"
+Your DuckStation executable may have a different name.
 
+For example:
+
+global DuckExe := "duckstation.exe"
+
+or:
+
+global DuckExe := "duckstation-qt-x64-ReleaseLTCG.exe"
+
+To find yours:
+
+Start DuckStation.
+Open Windows Task Manager.
+Go to the Details tab.
+Find the DuckStation process.
+Copy the exact .exe filename into DuckExe.
+
+The script also automatically tries these common fallback names:
+
+duckstation-qt-x64-ReleaseLTCG.exe
+duckstation-qt-x64.exe
+duckstation.exe
+
+so you may not need to change anything if your build uses one of those names.
 
 ## Limitations
 
