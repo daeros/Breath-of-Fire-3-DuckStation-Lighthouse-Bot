@@ -117,10 +117,6 @@ If a different lead works consistently on your system, please open an issue with
 
 The script expects a cycle roughly in the 4.3-5.4 second range. Make sure DuckStation is at normal emulation speed and that fast-forward is off.
 
-## Tested configuration
-
-The original working setup used:
-
 ## Required configuration
 
 Most users should only need to change a few variables near the top of
