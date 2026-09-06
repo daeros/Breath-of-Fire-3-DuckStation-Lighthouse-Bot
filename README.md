@@ -14,8 +14,8 @@ The default release timing is **140 ms early**, which was the successful setting
 - Breath of Fire III
 - DuckStation running the game at normal speed
 - The intended DuckStation controller action bound to host keyboard key **K**
-- You'll probably have to Edit certain variables to make it suitable for  your end.
-
+- Configuration.
+  
 ## Quick start
 
 1. Install AutoHotkey v2.
@@ -120,6 +120,31 @@ The script expects a cycle roughly in the 4.3-5.4 second range. Make sure DuckSt
 ## Tested configuration
 
 The original working setup used:
+
+## Required configuration
+Configuration
+
+Most users should only need to change one or two values near the top of bof3_lighthouse_bot.ahk.
+
+global LeadMs := 140
+
+global DuckExe := "duckstation-qt-x64-ReleaseLTCG-SSE2.exe"
+global DuckTitle := "Breath of Fire III"
+DuckExe
+
+Set this to the filename of the DuckStation executable you actually use.
+
+For example:
+
+global DuckExe := "duckstation.exe"
+
+or:
+
+global DuckExe := "duckstation-qt-x64-ReleaseLTCG.exe"
+
+You can find the executable name in Task Manager under the Details tab while DuckStation is running.
+
+The bot also tries several common fallback names automatically, but changing DuckExe is the safest option if your DuckStation build uses a different filename
 
 - Windows
 - DuckStation
