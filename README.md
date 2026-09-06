@@ -122,7 +122,6 @@ The script expects a cycle roughly in the 4.3-5.4 second range. Make sure DuckSt
 The original working setup used:
 
 ## Required configuration
-Configuration
 
 Most users should only need to change one or two values near the top of bof3_lighthouse_bot.ahk.
 
